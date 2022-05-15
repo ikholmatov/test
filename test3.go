@@ -10,7 +10,7 @@ import (
 type data interface {
 	Update()
 	Get(string) ([]info, error)
-	Delete()
+	Delete(int, string) (string, error)
 }
 type info struct {
 	id                int64
@@ -50,6 +50,7 @@ func (info) Get(db string) ([]info, error) {
 	}
 	return inf, err
 }
+
 func main() {
 	mybase := "user=venom password=112233 dbname=venom sslmode=disable"
 	var w info
@@ -61,4 +62,12 @@ func main() {
 		fmt.Println(v.firstnamelastname)
 	}
 
+}
+func (info) Delete(id int, db string) (string, error) {
+	ss, err := sql.Open("postgres", db)
+	if err != nil {
+		log.Panicf("%s\n%s", err, "Error while opening db")
+	}
+	defer ss.Close()
+	myquery := (`DELETE FROM mockdata where id $1`)
 }
