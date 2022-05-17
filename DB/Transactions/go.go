@@ -6,12 +6,10 @@ import (
 )
 
 type info struct {
-	Id          int
-	JobTitle    string
-	Email       string
-	FullName    string
-	PhoneNumber string
-	Country     string
+	id             int
+	FullName       string
+	BankcardNumber string
+	AmountInCard   string
 }
 
 func main() {
@@ -24,4 +22,9 @@ func (info) Update(mybase string, data info) (string, error) {
 		panic("err while opening data base")
 	}
 
+	tx, err := db.Begin()
+	if err != nil {
+		panic("Err while beginning Tx")
+	}
+	myquery := ""
 }
