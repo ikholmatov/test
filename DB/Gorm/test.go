@@ -8,14 +8,14 @@ import (
 )
 
 type User struct {
-	ID 		 int
+	ID       int
 	Name     string
 	Age      int
 	Birthday time.Time
 }
 
 func main() {
-	mybase := "user=venom password=112233 dbname=venom sslmode=disable"
+	mybase := "user=kilogram password=112233 dbname=kilogram sslmode=disable"
 	db, err := gorm.Open(postgres.Open(mybase), &gorm.Config{})
 	if err != nil {
 		fmt.Println(err, "POINT-1")
@@ -29,7 +29,8 @@ func main() {
 	db.Create(&users)
 
 	for _, user := range users {
-  		fmt.Println(user.ID)
+		fmt.Println(user.ID)
 
-}
+	}
+
 }

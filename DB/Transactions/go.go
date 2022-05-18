@@ -26,5 +26,5 @@ func (info) Update(mybase string, data info) (string, error) {
 	if err != nil {
 		panic("Err while beginning Tx")
 	}
-	myquery := ""
+	myquery := ``
 }
