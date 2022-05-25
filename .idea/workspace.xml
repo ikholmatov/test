@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d151c976-365d-4779-9efc-a8f80430e9f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DB/redis/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/Transactions/go.go" beforeDir="false" afterPath="$PROJECT_DIR$/DB/Transactions/go.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/FUNC/func.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/SQL/part1.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/Struck/stuck.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +44,7 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/home/kilogram/go/src/github.com/venomuz/test",
+    "last_opened_file_path": "/home/kilogram/go/src/github.com/venomuz/template-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
