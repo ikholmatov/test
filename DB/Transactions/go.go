@@ -2,6 +2,7 @@ package Transactions
 
 import (
 	"database/sql"
+	"fmt"
 	_ "github.com/lib/pq"
 )
 
@@ -13,7 +14,7 @@ type info struct {
 }
 
 func main() {
-	mybase := "user=venom password=112233 dbname=venom sslmode=disable"
+	//mybase := "user=venom password=112233 dbname=venom sslmode=disable"
 }
 
 func (info) Update(mybase string, data info) (string, error) {
@@ -26,5 +27,6 @@ func (info) Update(mybase string, data info) (string, error) {
 	if err != nil {
 		panic("Err while beginning Tx")
 	}
-	myquery := ``
+	fmt.Println(tx, mybase)
+	return "", nil
 }
