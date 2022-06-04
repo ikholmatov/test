@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d151c976-365d-4779-9efc-a8f80430e9f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/Gorilla/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/Gorilla/.idea/Gorilla.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/Gorilla/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/Gorilla/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/Gorilla/Data.SQL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/Gorilla/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/Gorilla/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/Gorilla/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/Gorilla/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +39,17 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="29bKqAzIKsgo8ikWxMmzPynKyHN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultGoTemplateProperty": "Go File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -41,17 +58,24 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/home/kilogram/go/src/github.com/venomuz/template-service",
+    "last_opened_file_path": "/home/kilogram/go/src/github.com/venomuz/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
-  <component name="RunManager" selected="Go Build.go build github.com/venomuz/test/DB/redis">
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
     <configuration name="go build github.com/venomuz/test/DB/redis" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <working_directory value="$PROJECT_DIR$/DB" />
@@ -59,6 +83,15 @@
       <package value="github.com/venomuz/test/DB/redis" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/DB/redis/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <working_directory value="$PROJECT_DIR$/API/Gorilla" />
+      <kind value="FILE" />
+      <package value="github.com/venomuz/test" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/API/Gorilla/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -72,8 +105,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build github.com/venomuz/test/DB/redis" />
+        <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build github.com/venomuz/test/DB/redis" />
       </list>
     </recent_temporary>
   </component>
@@ -91,6 +125,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
