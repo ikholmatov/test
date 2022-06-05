@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d151c976-365d-4779-9efc-a8f80430e9f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Gorilla/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Gorilla/.idea/Gorilla.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Gorilla/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Gorilla/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Gorilla/Data.SQL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Gorilla/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Gorilla/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Gorilla/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Gorilla/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gRCP Prot/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/Gorilla/Data.SQL" beforeDir="false" afterPath="$PROJECT_DIR$/API/Gorilla/Data.SQL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/Gorilla/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/API/Gorilla/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/Gorilla/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/API/Gorilla/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/Gorilla/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/API/Gorilla/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/Gorilla/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/API/Gorilla/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/Gorm/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/Gorm/go.sum" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +57,7 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/home/kilogram/go/src/github.com/venomuz/test",
+    "last_opened_file_path": "/home/venom/go/src/github.com/venomuz/test/API/Gorilla",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,6 +70,13 @@
     ]
   }
 }]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="DatabaseScript" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager" selected="Go Build.go build main.go (1)">
     <configuration name="go build github.com/venomuz/test/DB/redis" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="test" />

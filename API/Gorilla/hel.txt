@@ -1,0 +1,18 @@
+	gg := user{
+		FistName:    "Davron",
+		LastName:    "Kholmatov",
+		Birthday:    time.Date(2002, time.May, 26, 00, 00, 00, 00, time.UTC),
+		PhoneNumber: "+998909331343",
+		Address: address{
+			country:    "Uzbekistan",
+			city:       "Tashkent",
+			district:   "Chilanzar",
+			apartment:  "18",
+			postalCode: 100123,
+		},
+	}
+	create, err := gg.Create(gg)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(create)
