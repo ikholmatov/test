@@ -64,3 +64,30 @@ func (r *user) Get(Id string) (user, error) {
 	err = db.QueryRow(AddrGetQuery, Id).Scan(&UserInf.Address.Country, &UserInf.Address.City, &UserInf.Address.District, &UserInf.Address.Apartment, &UserInf.Address.PostalCode)
 	return UserInf, err
 }
+func (r *user) Update(Id string, num string) (bool, error) {
+	db, err := sql.Open("postgres", MyBase)
+	if err != nil {
+		return false, err
+	}
+	UpdateQuery := `UPDATE users SET phone_number = $2 WHERE id = $1 `
+	_, err = db.Exec(UpdateQuery, Id, num)
+	if err != nil {
+		return false, err
+	}
+	return true, err
+}
+func (r *user) Delete(Id string) (bool, error) {
+	db, err := sql.Open("postgres", MyBase)
+	if err != nil {
+		return false, err
+	}
+	DeleteQuery := `DELETE FROM users WHERE id = $1 `
+	_, err = db.Exec(DeleteQuery, Id)
+	if err != nil {
+		return false, err
+	}
+
+	return true, err
+
+}
+

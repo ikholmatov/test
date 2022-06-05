@@ -9,38 +9,69 @@ import (
 	"net/http"
 )
 
+var ff user
+
 func homeLink(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Welcome home!")
 }
 
 func main() {
-	//ff := user{}
-	//get, err := ff.Get(`4170c2ce-1c1d-4e88-8a60-c3845a963c22`)
-	//if err != nil {
-	//	fmt.Println(err)
-	//}
-	//fmt.Println(get)
+
 	router := mux.NewRouter().StrictSlash(true)
 	router.HandleFunc("/", homeLink)
-	router.HandleFunc("/user/create", create).Methods("POST")
+	router.HandleFunc("/user/create", Create).Methods("POST")
+	router.HandleFunc("/user/get/{id}", Get).Methods("GET")
+	router.HandleFunc("/user/update/{id}", Update).Methods("PUT")
+	router.HandleFunc("/user/delete/{id}", Delete).Methods("DELETE")
 	log.Fatal(http.ListenAndServe(":8080", router))
 
 }
-func create(w http.ResponseWriter, r *http.Request) {
+func Create(w http.ResponseWriter, r *http.Request) {
 	var newUser user
 	req, err := ioutil.ReadAll(r.Body)
 	if err != nil {
-		fmt.Fprintf(w, "we could not dealing")
+		fmt.Fprintf(w, "%s", err)
 	}
 
 	err = json.Unmarshal(req, &newUser)
 	if err != nil {
-		fmt.Println(err)
+		fmt.Fprintf(w, "%s", err)
 	}
 	data, err := newUser.Create(newUser)
 	if err != nil {
-		fmt.Println(err)
+		fmt.Fprintf(w, "%s", err)
 	}
+	w.WriteHeader(http.StatusCreated)
 	json.NewEncoder(w).Encode(data)
-	fmt.Println(data)
+}
+func Get(w http.ResponseWriter, r *http.Request) {
+	Id := mux.Vars(r)["id"]
+	get, err := ff.Get(Id)
+	if err != nil {
+		fmt.Fprintf(w, "%s", err)
+	}
+	w.WriteHeader(http.StatusOK)
+	json.NewEncoder(w).Encode(get)
+}
+func Update(w http.ResponseWriter, r *http.Request) {
+	Id := mux.Vars(r)["id"]
+	req, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		fmt.Fprintf(w, "%s", err)
+	}
+	json.Unmarshal(req, &ff)
+
+	update, err := ff.Update(Id, ff.PhoneNumber)
+	if err != nil {
+		fmt.Fprintf(w, "%s", err)
+	}
+	json.NewEncoder(w).Encode(update)
+}
+func Delete(w http.ResponseWriter, r *http.Request) {
+	Id := mux.Vars(r)["id"]
+	delete, err := ff.Delete(Id)
+	if err != nil {
+		fmt.Fprintf(w, "%s", err)
+	}
+	json.NewEncoder(w).Encode(delete)
 }

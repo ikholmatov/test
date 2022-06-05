@@ -16,3 +16,19 @@
 		fmt.Println(err)
 	}
 	fmt.Println(create)
+{
+    "id": "",
+    "firstName": "davron",
+    "lastName": "Kholamtov",
+    "birthday": "1999-01-08 04:05:06",
+    "phoneNumber": "+998909331343",
+    "address": {
+        "id": "",
+        "userId": "",
+        "country": "uzbekistan",
+        "city": "Tashkent",
+        "district": "Chilanzar",
+        "apartment": "18",
+        "postalCode": 100123
+    }
+}
