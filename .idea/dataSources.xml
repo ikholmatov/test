@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="gorilla@localhost" uuid="a39bda19-7293-4bf9-92b8-a8557b4401c9">
+    <data-source source="LOCAL" name="hihi@localhost" uuid="def33ce3-f0d3-4251-98bf-b0628b0de3ec">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/gorilla</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5432/hihi</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
